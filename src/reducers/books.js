@@ -1,7 +1,8 @@
 import { Action } from "rxjs/internal/scheduler/Action";
 
 const initialState = {
-    books: [ {id: 0, title: 'Hello World'} ]
+    isReady: false,
+    items: null,
 }
 
 export default (state = initialState, action) => {
@@ -9,8 +10,16 @@ export default (state = initialState, action) => {
         case 'SET_BOOKS':
             return {
                 ...state,
-                books: action.payload
+                items: action.payload,
+                isReady: true
             }
+        
+        case 'SET_IS_READY':
+            return {
+                ...state,
+                isReady: action.payload
+            };
+            break;
         
         case 'ADD_BOOKS':
             return {
