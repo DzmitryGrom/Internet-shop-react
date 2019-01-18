@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import MenuComponents from './Menu';
-import BookCard from './BookCard';
+import MenuComponents from '../containers/Menu';
+import BookCard from '../containers/BookCard';
 import Filter from '../containers/Filter';
 import { Container } from 'semantic-ui-react';
 import { Card } from 'semantic-ui-react';
@@ -15,7 +15,7 @@ class App extends Component {
     } 
 
     render() {
-        const { books, isReady, setFilter } = this.props;
+        const { books, isReady } = this.props;
         return (
         <Container>
                 <MenuComponents />
