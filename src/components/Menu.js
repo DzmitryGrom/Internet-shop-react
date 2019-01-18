@@ -5,16 +5,16 @@ const MenuComponents = () => (
 
     <Menu>
         <Menu.Item name='browse' >
-            Shop books
+            Магазин книг
         </Menu.Item>
 
         <Menu.Menu position='right'>
             <Menu.Item name='signup' >
-                Summ: &nbsp;<b>0</b> Rub.
+                Сумма: &nbsp;<b>0</b> Руб.
             </Menu.Item>
 
             <Menu.Item name='help'>
-                Basket (&nbsp;<b>0</b>)
+                Корзина &nbsp;(<b>0</b>)
             </Menu.Item>
         </Menu.Menu>
     </Menu>
